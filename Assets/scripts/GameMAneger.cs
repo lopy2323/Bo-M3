@@ -7,10 +7,10 @@ using System.Collections;
 public class GameMAneger : MonoBehaviour
 {
     public static GameMAneger instance;
-    [SerializeField] GameObject enemy;
-    [SerializeField] Transform Spawn;
+    [SerializeField]private GameObject enemy;
+    [SerializeField]private Transform Spawn;
     [SerializeField]public List<Transform> waypoints = new List<Transform>();
-    public int wave = 1;
+    [SerializeField]private int wave = 1;
     private int beginnerwave = 0;
     private float time = 0f;
     private void Awake()

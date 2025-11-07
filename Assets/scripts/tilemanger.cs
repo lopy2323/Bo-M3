@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 public class GridManager : MonoBehaviour
 {
     static public GridManager instance;
-    public Tilemap tilemap;
+    [SerializeField] private Tilemap tilemap;
     public Dictionary<Vector3Int, TileData> tileDataMap = new Dictionary<Vector3Int, TileData>();
 
     void Awake()
