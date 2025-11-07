@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public float speed = 2.5f;
-    public int health = 1;
+    [SerializeField] private float speed = 2.5f;
+    [SerializeField] private int health = 1;
     private int currentWaypointIndex = 0;
-    public float howfar = 0f;
+    public float howfar { get; private set; } = 0f;
     public static event Action loselife;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

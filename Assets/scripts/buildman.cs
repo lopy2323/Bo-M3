@@ -8,8 +8,8 @@ public class buildman : MonoBehaviour
     public static buildman _instance;
     private Sprite buildingsprite;
     private int checkedtype = 0;
-    public bool checkednum = false;
-    public int towernum = 0;
+    private bool checkednum = false;
+    private int towernum { get;  set; } = 0;
     private Vector3 mousepos;
     private GameObject previewTower;
 
